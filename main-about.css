@@ -47,6 +47,10 @@ nav ul li a {
     line-height: 80px;
 }
 
+nav ul li a:visited {
+    color: orange;
+}
+
 .dropdown {
     position: relative;
 }
@@ -78,7 +82,7 @@ nav ul li a {
 }
 
 nav ul li a:active {
-    color: darkorange;
+    color: greenyellow;
 }
 
 nav ul li a:hover {
