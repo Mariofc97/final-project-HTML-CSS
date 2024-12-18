@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DartClimb</title>
+    <link rel="stylesheet" href="../main-contact.css">
+</head>
+
+<body>
+
+    <header>
+        <nav aria-label="Header navigation">
+            <img src="../images/logo.png" alt="logo" class="logo">
+
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li class="dropdown">
+                    <a href="./courses.html">Courses</a>
+                    <ul id="services-menu" class="services-menu">
+                        <li><a href="#">Begginer Climbing</a></li>
+                        <li><a href="#">Advanced Bouldering</a></li>
+                        <li><a href="#">Family Climbing</a></li>
+                        <li><a href="#">Evening Climb</a></li>
+                        <li><a href="#">Kids Climbing Fun</a></li>
+                    </ul>
+                </li>
+                <li><a href="./pricing.html">Pricing</a></li>
+                <li id="last-item"><a href="#" id="current-page">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="first-section">
+            <div class="address">
+                Dartmoor Climbing Gym <br>
+                503 Industrial St. Vancouver BC V6A 3P2 <br>
+                Phone: 604-555-5555 <br>
+                Email: [info@dartmoorclimbgym.com](mailto:info@dartmoorclimbgym.com) <br>
+            </div>
+            <div class="log">
+                <p>
+                    → Save time!
+                    <a href="#">Log in</a> or
+                    <a href="#">Create Profile</a>
+                </p>
+            </div>
+        </section>
+        <section class="container">
+            <div>
+                <img src="/images/get-in-touch.jpg" alt="get-in-touch" class="picture-contact">
+            </div>
+            <div class="container-contact">
+
+                <h2>Get in Touch</h2>
+                <p>If you prefer, you can book your climbing filling out this form.</p>
+
+                <form action="submit_form.php" method="post" style="font-size: large;" class="submit-form">
+                    <div class="form-group">
+                        <label for="First-name">First Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="last-name">Last Name:</label>
+                        <input type="text" id="last-name" name="last-name" required>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <div class="phone-input">
+                            <select id="country-code" name="country-code">
+                                <option value="+1">+1 (USA)</option>
+                                <option value="+34">+34 (Spain)</option>
+                                <option value="+52">+52 (Mexico)</option>
+                            </select>
+                            <input type="tel" id="phone" pattern="\d*" placeholder="eg: 1234567890" class="label-phone"
+                                oninput="this.value = this.value.replace(/[^0-9]/g, '')" maxlength="10" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date">Date:</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Hour">Hour:</label>
+                        <input type="time" id="hour" name="hour" required>
+                    </div>
+
+                    <div class="form-group-full-width">
+                        <label for="rent-climbing">Do you need to rent climbing shoes/harness?</label>
+                        <select name="rent-climbing[]" id="rent-climbing" class="dropdown-rent">
+                            <option selected disabled>Select</option>
+                            <option value="shoes">Yes, shoes ( $6,50 )</option>
+                            <option value="harness">Yes, harness ( $4,00 )</option>
+                            <option value="No">No thank you!</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group-full-width">
+                        <label for="comments">Comments:</label>
+                        <textarea id="comments" name="comments" rows="3" required class=" comment-container"></textarea>
+                    </div>
+
+                    <div class="form-group-button">
+                        <button type="submit">BOOK YOUR CLIMBING</button>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Published <time datetime="2024-12-05">December 5, 2024</time></p>
+        <nav aria-label="Footer navigation">
+            <ul style="font-size: medium;">
+                <li><a href="#FAQ">FAQ</a></li>
+                <li><a href="#Terms">Terms</a></li>
+                <li><a id="privacy-link" href="#Privacy">Privacy</a></li>
+                <li><a href="#Cookies">Cookies</a></li>
+            </ul>
+        </nav>
+        <p>&copy; Dartmoor Climbing Gym. All rights reserved</p>
+    </footer>
+
+</body>
+
+</html>
